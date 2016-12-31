@@ -1,2 +1,0 @@
-# HadoopDemo
-learn hadoop
