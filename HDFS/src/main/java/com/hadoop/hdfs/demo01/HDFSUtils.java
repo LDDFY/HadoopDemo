@@ -9,12 +9,11 @@ import java.io.IOException;
 
 public class HDFSUtils {
 
-    static Configuration conf = new Configuration();
-    static FileSystem hdfs;
+    private static Configuration conf = new Configuration();
+    private static FileSystem hdfs = null;
 
     static {
         try {
-
             Configuration conf = new Configuration();
             conf.set("fs.defaultFS", "hdfs://master:9000/");
             Path path = new Path("hdfs://master:9000/");
@@ -25,7 +24,7 @@ public class HDFSUtils {
         }
     }
 
-    public void createDir(String dir) throws IOException {
+    private void createDir(String dir) throws IOException {
         Path path = new Path(dir);
         if (hdfs.exists(path)) {
             System.out.println("dir \t" + conf.get("fs.defaultFS") + dir + "\t already exists");
@@ -38,7 +37,7 @@ public class HDFSUtils {
     public static void main(String[] args) {
         HDFSUtils ofs = new HDFSUtils();
         try {
-            ofs.createDir("/test12");
+            ofs.createDir("/emp");
         } catch (IOException e) {
             e.printStackTrace();
         }
