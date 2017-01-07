@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WcCount">
+    <output-path>$PROJECT_DIR$/out/artifacts/WcCount</output-path>
+    <root id="archive" name="WcCount.jar">
+      <element id="module-output" name="HDFS" />
+    </root>
+  </artifact>
+</component>

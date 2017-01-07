@@ -17,6 +17,7 @@
             <artifactId>junit</artifactId>
             <version>4.9</version>
         </dependency>
+        <!--begin hadoop hdfs 环境包-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
@@ -30,6 +31,12 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+        <!--end hadoop hdfs 环境包-->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
             <version>${hadoop.version}</version>
         </dependency>
     </dependencies>

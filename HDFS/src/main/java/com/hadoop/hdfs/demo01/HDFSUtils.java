@@ -135,7 +135,7 @@ public class HDFSUtils {
 //        ofs.createDir("/temp");
 //        ofs.copyFromLocal("D:\\WorkSpaces\\InteliJ IDE\\HadoopDemo\\HDFS\\src\\main\\resources\\CHANGES.txt", "hdfs://master:9000/temp/");
 //        ofs.copyToLocal("hdfs://master:9000/temp/CHANGES.txt", "D:\\\\WorkSpaces\\\\InteliJ IDE\\\\HadoopDemo\\\\HDFS\\\\target\\\\");
-//        ofs.deleteDir("/temp");
+        ofs.deleteDir("/output/wc/");
     }
 
 }
